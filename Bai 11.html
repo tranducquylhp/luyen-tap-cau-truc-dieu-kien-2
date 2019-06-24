@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let luong=parseInt(prompt("Nhap luong: "));
+        let thue=0;
+        if (luong<=500) thue=luong*0.05;
+        else if (luong<=1000) thue=luong*0.1-25;
+        else if (luong<=1800) thue=luong*0.15-75;
+        else if (luong<=3200) thue=luong*0.2-165;
+        else if (luong<=5200) thue=luong*0.25-325;
+        else if (luong<=8000) thue=luong*0.3-585;
+        else thue=luong*0.35-9850;
+        alert("So thue thu nhap ca nhan phai nop la: "+thue);
+    </script>
+</body>
+</html>

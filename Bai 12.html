@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let soTien=parseInt(prompt("Nhap so tien cho vay: "));
+        let laiSuat=parseFloat(prompt("Nhap lai suat (%): "));
+        let soThang=parseInt(prompt("Nhap so thang cho vay: "));
+        let tongtien=soTien* Math.pow(1+laiSuat/100,soThang);
+        alert("So tien phai tra la: "+tongtien);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a=parseFloat(prompt("Nhap he so a: "));
+        var b=parseFloat(prompt("Nhap he so b: "));
+        var c=parseFloat(prompt("Nhap he so c: "));
+        if (a==0) {
+            let x=-c/b;
+            alert("Nghiem cua phuong trinh la: "+x);
+        }
+        else {
+            var delta = (b*b)-(4*a*c);
+            if (delta > 0) {
+                let x1=(-b+Math.sqrt(delta))/(2*a);
+                let x2=(-b-Math.sqrt(delta))/(2*a);
+                alert("Phuong trinh co 2 nghiem phan biet la: "+x1+" va "+x2);
+            }
+            else if (delta==0) {
+                let x = -b / (2 * a);
+                alert("Phuong trinh co nghiem duy nhat la: " + x);
+            }
+            else alert("Phuong trinh vo nghiem");
+        }
+    </script>
+</body>
+</html>

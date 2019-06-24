@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let soDien=parseInt(prompt("Nhap so dien tieu thu: "));
+        let tienDien=0;
+        if (soDien<=50) tienDien=soDien*2000;
+        else if (soDien<=100) tienDien=50*2000+ (soDien-50)*2200;
+        else if (soDien<=150) tienDien=50*2000+50*2200+ (soDien-100)*2400;
+        else if (soDien<=200) tienDien=50*2000+50*2200*50*2400+ (soDien-150)*2600;
+        else tienDien=50*2000+50*2200+50*2400+50*2600+ (soDien-200)*3000;
+        alert("So tien dien phai tra la: "+tienDien);
+    </script>
+</body>
+</html>
